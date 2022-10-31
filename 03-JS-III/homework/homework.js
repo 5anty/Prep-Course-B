@@ -5,6 +5,12 @@
 // No cambies los nombres de las funciones.
 
 function imprimirSumaNumeros() {
+  var a = 0
+  for(i=1 ; i<11 ; i++){
+    a = a + i;
+  }
+  return a;
+
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
     // Tu código:
