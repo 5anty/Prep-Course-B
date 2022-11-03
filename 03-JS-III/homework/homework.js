@@ -6,7 +6,7 @@
 
 function imprimirSumaNumeros() {
   var a = 0
-  for(i=1 ; i<11 ; i++){
+  for(var i=1 ; i<11 ; i++){
     a = a + i;
   }
   return a;
@@ -17,24 +17,33 @@ function imprimirSumaNumeros() {
 }
 
 function encuentraPares(array){
+  return array.filter(numero => numero % 2 ===0);
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
 }
 
 function elevaAlCuadrado(array){
+return array.map((e) => e ** 2);
+   
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
 }
 
+
 function sumaArray(array){
+  var S = 0;
+  for(e of array) S += e
+  return S;
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
 }
 
 function numeroDigitos(num){
+  return num.toString().length;
+  
   // Devuelve el número de dígitos de un número dado
   // Tu código:
 }
